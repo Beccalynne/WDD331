@@ -1,0 +1,20 @@
+/* Setting html- height: 100% will have it fill the page and then you can adj height on individual rules */
+/* VH - View hieght - similar to making it the whole screen --- Another way to set browser window(viewport) instead of adjusting HTML
+VW - View width
+Vmin - depends on the smallest */
+
+/* font size you can go 1.2em, makes it a little larger because resolutions have 
+changed over time and making the font pixel smaller -- if set in html tag sets base/reference point */
+
+/* rem - absolute; em - relative and build sizes off eachother */
+
+/* 
+@media screen and (min-width: 700px)
+min width- when min width exeeds 700 px - when the screen gets bigger
+max width - when the screen gets smaller
+
+Only include what needs to change, don't copy and paste the original rule
+Pace media query at the end of your CSS file --- heirarchy
+
+Use as many break points as you need, when design looks broken at a break point and redesign
+*/

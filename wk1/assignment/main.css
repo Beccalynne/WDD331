@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+*{
+    box-sizing: border-box;
+}
+h1{
+    font-family: 'Lora', serif;
+    font-size: 3em;
+    color: #333;
+    text-align: center;
+}
+h2{
+    font-family: 'Lora', serif;
+}
+nav{
+    font-family: 'Lora', serif;
+    text-align: center;
+    border-top: 1px solid #d0d0d0;
+    text-transform: uppercase;
+}
+ul{
+    list-style-type: none;
+    padding: 0px;
+}
+li{
+    padding: .5em;
+}
+main{
+    text-align: center;
+}
+body{
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.post-date{
+    font-size: 1.7em;
+    text-align: right;
+    font-family: 'Lora', serif;
+    text-transform: uppercase;
+    border-top: 1px solid #d0d0d0;
+    border-bottom: 1px solid #d0d0d0;
+    padding-top: 1em;
+}
+a:link, a:visited{
+    color: #666;
+    text-decoration: none;
+}
+nav a:hover{
+    color: #00ddff;
+}
+nav a:active{
+    color: deb887;
+}
+
+@media screen and (min-width: 700px){
+    body{
+        margin: 2em;
+    }
+    nav{
+        border-bottom: 1px solid #d0d0d0;
+    }
+    nav ul{
+        display: flex;
+        justify-content: flex-end;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        margin-top: 2em;
+    }
+    article{
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+    }
+    .post-date{
+        grid-column: 1/2;
+        padding: 1em;
+        border-top: none;
+        border-bottom: none;
+    }
+    .post-content{
+        grid-column: 2/3;
+        text-align: left;
+        border-left: 1px solid #d0d0d0;
+        padding: 1em;
+    }
+    article:nth-of-type(1){
+        border-bottom: 1px solid #d0d0d0;
+    }
+
+}
